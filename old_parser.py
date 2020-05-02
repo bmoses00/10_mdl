@@ -101,6 +101,7 @@ def parse_file( fname, edges, polygons, transform, screen, zbuffer, view, ambien
                     float(args[3]), float(args[4]), float(args[5]))
             matrix_mult( systems[-1], polygons )
             draw_polygons(polygons, screen, zbuffer, view, ambient, light, areflect, dreflect, sreflect)
+
             polygons = []
 
         elif line == 'circle':
